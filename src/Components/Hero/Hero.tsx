@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import LogoMarianas from "/img/LogoMarianas.png";
 
 const Hero: React.FC = () => {
   return (
@@ -12,8 +13,14 @@ const Hero: React.FC = () => {
         frameBorder="0"
         allow="autoplay; encrypted-media; picture-in-picture; web-share; fullscreen"
       ></iframe>
+      <div className="coveredBox"></div>
       <div className="content">
-        <img className="LogoCompany" src="/img/LogoMarianas.png" alt="" />
+        <img
+          className="LogoCompany"
+          src={LogoMarianas}
+          alt="Company Logo"
+          loading="lazy"
+        />
         <div className="buttonsArea">
           <button className="heroButton">― Our Products ―</button>
           <button className="heroButton">― Invest with us ―</button>

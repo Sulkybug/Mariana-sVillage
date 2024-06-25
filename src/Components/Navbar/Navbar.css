@@ -63,6 +63,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  z-index: 100;
 }
 
 nav a {
@@ -149,6 +150,7 @@ nav a:hover,
     background-position: center;
     transform: translateY(-100vh);
     transition: 0.5s ease;
+    z-index: 20px;
   }
 
   .logoText {

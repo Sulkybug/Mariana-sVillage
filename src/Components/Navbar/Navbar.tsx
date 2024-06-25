@@ -1,8 +1,10 @@
 import React from "react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { FaTimes, FaBars } from "react-icons/fa";
 import "./Navbar.css";
+import LogoMarianas from "/img/LogoMarianas.png";
 
 interface NavbarProps {
   onScroll: string;
@@ -20,24 +22,19 @@ const Navbar: React.FC<NavbarProps> = ({ onScroll }) => {
   return (
     <header className={onScroll}>
       <Link to="/" className="navbar-logo">
-        <img
-          src="/img/LogoMarianas.png"
-          alt="icon"
-          className="myLogo"
-          loading="lazy"
-        />
+        <img src={LogoMarianas} alt="icon" className="myLogo" loading="lazy" />
         <h2 className="logoText">Mariana's Village</h2>
       </Link>
       <nav ref={navRef}>
         <Link to="/" onClick={showNavBar}>
           Home
         </Link>
-        <a href="/#product" onClick={showNavBar}>
+        <HashLink smooth to="/#product" onClick={showNavBar}>
           Products
-        </a>
-        <a href="/#investors" onClick={showNavBar}>
+        </HashLink>
+        <HashLink smooth to="/#investors" onClick={showNavBar}>
           Investors
-        </a>
+        </HashLink>
         <Link to="/about-us" onClick={showNavBar}>
           About us
         </Link>

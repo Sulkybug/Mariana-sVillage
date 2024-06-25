@@ -29,6 +29,14 @@ iframe {
   background-size: cover;
 }
 
+.coveredBox {
+  position: absolute;
+  background-color: rgba(137, 43, 226, 0);
+  z-index: 5;
+  width: 100vw;
+  height: 115vh;
+}
+
 .content {
   width: 100%;
   height: 100vh;
