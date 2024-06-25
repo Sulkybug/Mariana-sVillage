@@ -6,7 +6,7 @@ import Investors from "./Components/Investors/Investors";
 import LateralBar from "./Components/LateralBar/LateralBar";
 import Footer from "./Components/Footer/Footer";
 
-function Home() {
+function App() {
   const [onScroll, SetOnScroll] = useState<string>("");
 
   window.onscroll = function () {
@@ -24,4 +24,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default App;
