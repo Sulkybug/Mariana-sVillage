@@ -7,7 +7,7 @@ const LateralBar: React.FC = () => {
     <div>
       <section className="buttonsBar">
         <a
-          href="https://www.facebook.com/profile.php?id=61558536885530"
+          href="https://www.facebook.com/marianaisvillage/"
           target="_blank"
           className="facebook"
         >
@@ -23,7 +23,7 @@ const LateralBar: React.FC = () => {
         </a>
 
         <a
-          href="https://api.whatsapp.com/send?phone=573152637167"
+          href="https://api.whatsapp.com/send?phone=573128146792"
           className="whatsapp"
           target="_blank"
         >
@@ -31,8 +31,8 @@ const LateralBar: React.FC = () => {
         </a>
 
         <a
-          href="mailto:feang_c0@hotmail.com"
-          className="whatsapp"
+          href="mailto:marianaisvillage@gmail.com"
+          className="mail"
           target="_blank"
         >
           <FaEnvelope />

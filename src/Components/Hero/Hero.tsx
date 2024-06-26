@@ -22,8 +22,17 @@ const Hero: React.FC = () => {
           loading="lazy"
         />
         <div className="buttonsArea">
-          <button className="heroButton">― Our Products ―</button>
-          <button className="heroButton">― Invest with us ―</button>
+          <form action="#product">
+            <button className="heroButton" type="submit">
+              ― Our Products ―
+            </button>
+          </form>
+
+          <form action="#investors">
+            <button className="heroButton" type="submit">
+              ― Invest with us ―
+            </button>
+          </form>
         </div>
       </div>
     </div>

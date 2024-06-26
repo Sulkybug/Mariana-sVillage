@@ -26,18 +26,18 @@ const Navbar: React.FC<NavbarProps> = ({ onScroll }) => {
         <h2 className="logoText">Mariana's Village</h2>
       </Link>
       <nav ref={navRef}>
-        <Link to="/" onClick={showNavBar}>
+        <HashLink smooth to="/" onClick={showNavBar}>
           Home
-        </Link>
+        </HashLink>
         <HashLink smooth to="/#product" onClick={showNavBar}>
           Products
         </HashLink>
         <HashLink smooth to="/#investors" onClick={showNavBar}>
           Investors
         </HashLink>
-        <Link to="/about-us" onClick={showNavBar}>
+        <HashLink smooth to="/about-us" onClick={showNavBar}>
           About us
-        </Link>
+        </HashLink>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
         </button>
