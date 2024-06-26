@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import LogoMarianas from "/img/LogoMarianas.png";
+import { HashLink } from "react-router-hash-link";
 
 const Hero: React.FC = () => {
   return (
@@ -22,17 +23,17 @@ const Hero: React.FC = () => {
           loading="lazy"
         />
         <div className="buttonsArea">
-          <form action="#product">
+          <HashLink smooth to="/#product">
             <button className="heroButton" type="submit">
               ― Our Products ―
             </button>
-          </form>
+          </HashLink>
 
-          <form action="#investors">
+          <HashLink smooth to="/#investors">
             <button className="heroButton" type="submit">
               ― Invest with us ―
             </button>
-          </form>
+          </HashLink>
         </div>
       </div>
     </div>

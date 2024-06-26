@@ -1,6 +1,5 @@
 import React from "react";
 import { useRef } from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { FaTimes, FaBars } from "react-icons/fa";
 import "./Navbar.css";
@@ -21,10 +20,10 @@ const Navbar: React.FC<NavbarProps> = ({ onScroll }) => {
   };
   return (
     <header className={onScroll}>
-      <Link to="/" className="navbar-logo">
+      <HashLink smooth to="/" className="navbar-logo">
         <img src={LogoMarianas} alt="icon" className="myLogo" loading="lazy" />
         <h2 className="logoText">Mariana's Village</h2>
-      </Link>
+      </HashLink>
       <nav ref={navRef}>
         <HashLink smooth to="/" onClick={showNavBar}>
           Home
