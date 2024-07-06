@@ -20,12 +20,12 @@ const Navbar: React.FC<NavbarProps> = ({ onScroll }) => {
   };
   return (
     <header className={onScroll}>
-      <HashLink smooth to="/" className="navbar-logo">
+      <HashLink smooth to="/#hero" className="navbar-logo">
         <img src={LogoMarianas} alt="icon" className="myLogo" loading="lazy" />
         <h2 className="logoText">Mariana's Village</h2>
       </HashLink>
       <nav ref={navRef}>
-        <HashLink smooth to="/" onClick={showNavBar}>
+        <HashLink smooth to="/#hero" onClick={showNavBar}>
           Home
         </HashLink>
         <HashLink smooth to="/#product" onClick={showNavBar}>

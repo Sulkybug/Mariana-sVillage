@@ -90,3 +90,22 @@ iframe {
   background-color: rgb(255, 255, 255);
   transition: 0.7s;
 }
+
+@media only screen and (max-width: 1044px) {
+  .LogoCompany {
+    width: 55%;
+    margin-bottom: 10px;
+  }
+  .content {
+    flex-direction: column;
+  }
+
+  iframe {
+    position: absolute;
+    width: 100vw;
+    height: 115vh;
+    overflow: hidden;
+    z-index: -50;
+    background-size: cover;
+  }
+}
