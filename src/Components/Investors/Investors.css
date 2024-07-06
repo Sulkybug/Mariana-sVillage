@@ -117,21 +117,23 @@ h1 {
   }
 
   .investingText {
-    width: 70%;
-    text-align: justify;
-    font-size: 18px;
+    width: 95%;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 15px;
   }
 
   .titleBox {
-    width: 70%;
+    width: 95%;
   }
 
   h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .moreAboutButton {
-    font-size: 25px;
+    margin-top: 20px;
+    font-size: 20px;
   }
 }
