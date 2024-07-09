@@ -171,7 +171,7 @@ nav a:hover,
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95%;
+    width: 85%;
     height: 80px;
     font-size: 20px;
     text-align: center;
@@ -179,7 +179,7 @@ nav a:hover,
     border-bottom: solid 1px antiquewhite;
     border-left: solid 1px antiquewhite;
     border-right: solid 1px antiquewhite;
-    margin: 0px 40px 0px 20px;
+    margin: 0px 20px 0px 20px;
     box-shadow: rgba(161, 201, 16, 0.178) 2px 2px 50px;
   }
 
@@ -189,6 +189,7 @@ nav a:hover,
     background-size: cover;
     text-shadow: black 2px 0 10px;
     filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+    scale: 1.05;
     transition: 1.2s;
   }
 

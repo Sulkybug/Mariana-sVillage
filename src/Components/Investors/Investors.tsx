@@ -1,6 +1,7 @@
 import React from "react";
 import "./Investors.css";
 import investment from "/img/investmentCouple.jpg";
+import { HashLink } from "react-router-hash-link";
 
 const Investors: React.FC = () => {
   return (
@@ -26,7 +27,9 @@ const Investors: React.FC = () => {
           opportunities promise growth in Colombia's thriving economy. Join us
           to expand our business and be part of a dynamic and growing venture.
         </p>
-        <button className="moreAboutButton">Learn more</button>
+        <HashLink smooth to="/dating">
+          <button className="moreAboutButton">Learn more</button>
+        </HashLink>
       </div>
     </div>
   );
